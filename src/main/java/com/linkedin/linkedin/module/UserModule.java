@@ -2,6 +2,8 @@ package com.linkedin.linkedin.module;
 
 import jakarta.persistence.*;
 
+import java.sql.Time;
+
 @Entity
 @Table(name = "users")
 public class UserModule {
@@ -11,6 +13,16 @@ public class UserModule {
     private Integer id;
     private String useremail;
     private String userpassword;
+
+    public Time getCreated_at() {
+        return created_at;
+    }
+
+    public void setCreated_at(Time created_at) {
+        this.created_at = created_at;
+    }
+
+    private Time created_at;
 
     // Default constructor
     public UserModule() {}
