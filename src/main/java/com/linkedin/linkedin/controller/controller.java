@@ -10,6 +10,7 @@ import java.util.List;
 
 // Adjust as needed
 @RestController
+@CrossOrigin(origins = "https://linkedin-project-wheat.vercel.app")
 @RequestMapping("/api/v1/")
 public class controller {
 
